@@ -11,6 +11,6 @@ client.subscribe(topic, function(err, granted){
 	console.log('subscribe', err, granted);
 });
 
-client.on('message', function(topicc, message){
-	console.log(topicc, message);
+client.on('message', function(topic, message){
+	console.log(topic, message);
 });
